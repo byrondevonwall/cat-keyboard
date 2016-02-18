@@ -1,0 +1,122 @@
+/******************************************************************
+element selectors
+*******************************************************************/
+
+
+
+
+
+/******************************************************************
+class selectors
+*******************************************************************/
+.grid{
+  margin: 35px 0 0 0;
+  list-style: none;
+  position: relative;
+  width: 60%;
+}
+
+.grid li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 16.666666666666666666666666666666666666666667%;
+  width: calc(100%/5);
+}
+
+.grid li a,
+.grid li a img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.grid li a img{
+  width: 100%;
+}
+
+.grid li a div{
+  position: absolute;
+  left: 7%;
+  top: 5%;
+  right: 7%;
+  bottom: 5%;
+  background: rgba(71,163,218,0.2);
+  padding: 67% 3% 67% 0;
+  opacity: 0;
+}
+
+.grid li a:hover div {
+  opacity: 1;
+}
+
+.grid li a div p {
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding: 0 6% 0% 40%;
+  font-family: 'lato', sans-serif;
+}
+
+
+
+
+/******************************************************************
+media queries
+*******************************************************************/
+@media screen and (max-width: 1190px) {
+  .grid li {
+    width: 20%;
+    width: calc(100%/5);
+  }
+
+  /*.grid li a div{
+    padding: 67% 0 67% 12%;
+  }
+
+  .grid li a div p {
+    padding: 0 10% 0 0;
+  }*/
+}
+
+@media screen and (max-width: 945px) {
+  .grid li {
+    width: 25%;
+    width: calc(100%/4);
+  }
+/*
+  .grid li a div{
+    padding: 67% 0 67% 0;
+  }
+
+  .grid li a div p {
+    padding: 0 20px 0;
+  }*/
+}
+
+@media screen and (max-width: 660px) {
+  .grid li {
+    width: 33.333333333333333333333333333333333333333333333333333333%;
+    width: calc(100%/3);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid li {
+    width: 50%;
+    width: calc(100%/2);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .grid li {
+    width: 100%;
+  }
+}
+
+
+/******************************************************************
+
+*******************************************************************/
